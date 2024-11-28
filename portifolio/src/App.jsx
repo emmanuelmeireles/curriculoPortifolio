@@ -1,5 +1,5 @@
  
-import {BrowserRouter as Router, Switch} from 'react-router-dom' 
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom' 
 import Home from "./Components/Pages/Home"
 import Portifolio from "./Components/Pages/Portifolio";
 import Game from "./Components/Pages/Game";
@@ -12,21 +12,13 @@ function App() {
   return (
     <Router>
       <Navbar/>
-      <Switch>
         <Container customClass="min-height">
-
-          <Router exact path="/Game">
-            <Game/>
-          </Router>
-          <Router exact path="/Home">
-            <Home/>
-          </Router>
-          <Router exact path="/Portifolio">
-            <Portifolio/>
-          </Router>
-
+          <Routes>
+            <Route exact path="/Game" element={<Game />} />
+            <Route exact path="/" element={<Home />} />
+            <Route exact path="/Portifolio" element={<Portifolio />} />
+          </Routes>
         </Container>
-      </Switch>
       <Footer/>
     </Router>
   );

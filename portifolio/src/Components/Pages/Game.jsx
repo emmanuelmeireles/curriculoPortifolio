@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 const generateCombination = () => {
   return Array.from({ length: 4 }, () => Math.floor(Math.random() * 10)).join("");
 };
