@@ -1,22 +1,31 @@
-.navbar{
+.navbar {
     display: flex;
     justify-content: space-between;
     background-color: #222;
-    padding:1 em;
-
+    padding: 1em;
+    gap: 1rem
 }
-.list{
-    display: flex;
+  
+.list {
+    display: flex; 
     list-style: none;
-    align-items: center;
+    padding: 0;
+    margin: 0;
 }
-.item{
-    margin-right: 1 em;
+  
+  .item {
+    margin-right: 1em; 
 }
-
-item a{
+  
+.item:last-child {
+    margin-right: 0;
+}
+  
+.item a {
     color: #fff;
+    text-decoration: none; 
 }
-.item a:hover{
-    color:#ffbb33;
+  
+.item a:hover {
+    color: #ffbb33; 
 }
