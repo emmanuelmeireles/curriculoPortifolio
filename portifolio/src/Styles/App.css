@@ -1,0 +1,32 @@
+body{
+  font-family: fantasy, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  width:100%;
+  box-sizing: border-box;
+  background-color: #06141b;
+  overflow: hidden;
+  font-size: 25px;
+}
+
+.navbar a {
+  color: #ccd0cf;
+  padding: 50xp 15px;
+  text-decoration: none;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+section {
+  padding: 20px;
+}
+
